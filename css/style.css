@@ -46,18 +46,30 @@ body {
   color: #fff;
 }
 
-.calculator > .btn-grey {
+.btn {
   cursor: pointer;
   font-size: 2rem;
   border: 1px solid #fff;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.75);
-  transform: translate();
+  transition: background-color 0.6s ease-in-out;
 }
-
-.calculator > .btn:hover {
+.btn:hover {
   background-color: rgba(255, 255, 255, 0.9);
   color: rgba(17, 17, 17, 0.75);
+}
+
+.btn-grey {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  transition: background-color 0.6s ease-in-out;
+}
+.btn-grey:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgba(17, 17, 17, 0.75);
+}
+
+.btn-yellow {
+  background-color: orange;
+  border: 1px solid #fff;
 }
 
 .btn-clear-all {
@@ -95,9 +107,4 @@ body {
 
 .span-two {
   grid-column: span 2;
-}
-
-.btn-yellow {
-  background-color: orange;
-  border: 1px solid #fff;
 }
